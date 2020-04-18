@@ -1,15 +1,17 @@
-package com.zxac.ribbon_consumer;
+package com.zxac.user_consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class RibbonConsumerApplication {
+@EnableFeignClients
+public class UserConsumerApplication {
 
     @Bean
     @LoadBalanced
@@ -18,7 +20,7 @@ public class RibbonConsumerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonConsumerApplication.class, args);
+        SpringApplication.run(UserConsumerApplication.class, args);
     }
 
 }

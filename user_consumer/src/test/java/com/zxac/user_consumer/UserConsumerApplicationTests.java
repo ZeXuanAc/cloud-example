@@ -1,4 +1,4 @@
-package com.zxac.ribbon_consumer;
+package com.zxac.user_consumer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class RibbonConsumerApplicationTests {
+public class UserConsumerApplicationTests {
 
     @Test
     public void contextLoads() {
