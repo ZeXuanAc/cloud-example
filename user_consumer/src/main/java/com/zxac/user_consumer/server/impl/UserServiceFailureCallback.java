@@ -11,5 +11,10 @@ public class UserServiceFailureCallback implements UserService {
         return false;
     }
 
+    @Override
+    public String randomNum() {
+        return "-1";
+    }
+
 
 }

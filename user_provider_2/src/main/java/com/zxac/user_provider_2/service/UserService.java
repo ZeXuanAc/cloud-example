@@ -1,4 +1,4 @@
-package com.zxac.user_provider.service;
+package com.zxac.user_provider_2.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ public class UserService {
 
     @GetMapping("random_num")
     public String randomNum(){
-        return "1";
+        return "2";
     }
 
 }

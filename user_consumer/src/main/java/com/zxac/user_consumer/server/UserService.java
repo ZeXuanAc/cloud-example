@@ -13,4 +13,6 @@ public interface UserService {
     @GetMapping("user_login")
     boolean login(@RequestParam("name") String name, @RequestParam("password") String password);
 
+    @GetMapping("random_num")
+    String randomNum();
 }
