@@ -11,4 +11,5 @@ feign:
     enabled: true
 user-provider:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule/

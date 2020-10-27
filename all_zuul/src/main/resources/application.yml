@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-all-zuul
+server:
+  port: 10010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8760/eureka
+zuul:
+  routes:
+    users:
+      serviceId: user-consumer
+      path: /uc/**
